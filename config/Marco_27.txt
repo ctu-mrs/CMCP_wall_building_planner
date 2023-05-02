@@ -1,0 +1,8 @@
+#brick_id brick_type brick_x_pos brick_y_pos brick_z_pos brick_yaw_rotated
+1 2 0.30 3.0 0.1 0
+2 3 1.22 3.0 0.1 0
+3 1 0.15 3.0 0.3 0
+4 3 0.91 3.0 0.3 0
+5 1 1.67 3.0 0.3 0
+6 3 0.60 3.0 0.5 0
+7 2 1.52 3.0 0.5 0

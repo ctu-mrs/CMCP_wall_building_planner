@@ -1,0 +1,22 @@
+function(load_folder regex_path prefix links_libs)
+    message(STATUS "Loading folder: " ${regex_path} ", prefix: " ${prefix})
+
+    foreach(loop_var ${${links_libs}})
+        message(STATUS "lib: " ${loop_var})
+    endforeach(loop_var)
+
+    set(SOURCE_FILES )
+    file(GLOB_RECURSE SOURCE_FILES FILES_MATCHING PATTERN ${regex_path})
+    foreach(loop_var ${SOURCE_FILES})
+        get_filename_component(barename ${loop_var} NAME_WE)
+        set(PROGRAM_NAME ${prefix}${barename})
+        string(CONCAT MSG "-- example: " ${PROGRAM_NAME})
+        message(${MSG})
+        add_executable(${PROGRAM_NAME} ${loop_var})
+        foreach(loop_var ${${links_libs}})
+            target_link_libraries(${prefix}${barename} ${loop_var})
+        endforeach(loop_var)
+
+        post_run_link(${prefix}${barename})
+    endforeach(loop_var)
+endfunction()

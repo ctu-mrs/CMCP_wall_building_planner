@@ -1,0 +1,10 @@
+.vscode
+ctop-model.lp
+output.log
+tests/ctop-model.lp
+tests/output.log
+.idea
+cmake-build-*
+.DS_Store
+results
+latex
