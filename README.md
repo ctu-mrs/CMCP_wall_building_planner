@@ -38,12 +38,17 @@ Clone the code repository and update the submodules.<br />
 ### Compilation and dependencies
 
 Install the following dependencies:<br />
-`sudo apt-get install build-essential cmake pkg-config`<br />
+`sudo apt-get install git build-essential cmake pkg-config libyaml-cpp-dev`<br />
 
 You can compile the code using the script<br />
 `./build.sh`<br />
 
-By default the build should compile both GRASP-based Cooperative Masonry Construction Planner (CMCP) and the MILP-based planner with CPLEX. Yet you need to specify the 
+By default the build should compile both GRASP-based Cooperative Masonry Construction Planner (CMCP) and the MILP-based planner with CPLEX. Yet you need to specify the cplex location in cmake/Modules/FindCPLEX.cmake, set the following variables to match your setup
+
+```
+set(CPLEX_STUDIO_DIR /opt/cplex-12.8.0)
+set(CPLEX_STUDIO_DIR_ /opt/cplex-12.8.0)
+```
 
 ### Running the code
 

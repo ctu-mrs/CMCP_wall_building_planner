@@ -11,9 +11,12 @@ set -e
 
 # grasp is compatible with macOS, Windows, Linux
 ./build_cmake_target.sh planner_standalone_grasp
+echo "GRASP planner compiled"
 
 if [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+    echo "trying to compile CPLEX MILP planner"
     # requires cplex library available only for linux
     ./build_cmake_target.sh planner_standalone_optimal;
+    echo "CPLEX planner compiled"
 fi
 
