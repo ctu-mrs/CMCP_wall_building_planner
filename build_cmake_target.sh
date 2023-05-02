@@ -1,3 +1,5 @@
+#!/bin/bash
+set -e
 # $1 - cmake target name, to list all targets use 'help' target
 
 if [ -z "$1" ]; then

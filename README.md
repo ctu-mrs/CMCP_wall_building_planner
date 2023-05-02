@@ -35,5 +35,22 @@ Clone the code repository and update the submodules.<br />
 `cd CMCP_wall_building_planner`<br />
 `git submodule update --init --recursive`
 
-
 ### Compilation and dependencies
+
+Install the following dependencies:<br />
+`sudo apt-get install build-essential cmake pkg-config`<br />
+
+You can compile the code using the script<br />
+`./build.sh`<br />
+
+By default the build should compile both GRASP-based Cooperative Masonry Construction Planner (CMCP) and the MILP-based planner with CPLEX. Yet you need to specify the 
+
+### Running the code
+
+You can set/modify the config, i.e. *config/planner.yaml* and the problem to be solved, i.e. the *config/Test_39.txt*.
+
+The GRASP-based CMCP can be run using:
+`./cmake-build-debug/standalone/grasp/planner_standalone_grasp --problem=config/Test_39.txt --config-file=config/planner.yaml --output=results`
+
+The MILP-based planner can be run using (with max 7200s runtime):
+`./cmake-build-debug/standalone/optimal/planner_standalone_optimal --sop-solver=lp --name _all --problem=config/Test_39.txt --config-file=config/planner.yaml --output=results --maximal-calculation-time-sec 7200`

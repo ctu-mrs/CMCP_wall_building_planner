@@ -33,7 +33,7 @@ min_distance_concurrent_brick_placing_cm: 80
 
 #whether to build entire layer first
 entire_layer_first: false
-minimize_total_time: false
+minimize_total_time: true
 
 #default values to be used when calling outside of ros service
 time_budget_s: 2500

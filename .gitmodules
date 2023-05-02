@@ -4,3 +4,6 @@
 [submodule "lib/fmt"]
 	path = lib/fmt
 	url = https://github.com/fmtlib/fmt.git
+[submodule "lib/comrob/crl"]
+	path = lib/comrob/crl
+	url = https://github.com/comrob/crl.git

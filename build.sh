@@ -1,3 +1,5 @@
+#!/bin/bash
+set -e
 # commandline script for building main targets
 # all build files will be in separate build directory
 

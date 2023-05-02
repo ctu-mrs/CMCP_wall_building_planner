@@ -1,3 +1,5 @@
+#!/bin/bash
+set -e
 # running build scripts directly from commandline
 cmake \
     -DCMAKE_BUILD_TYPE=Debug \
