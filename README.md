@@ -12,6 +12,7 @@ tion with UAVs**, Automation in Construction, Volume 152, 104908, 2023, <https:/
 ```
 @article{Elkhapery23_AIC_UAVWallBuilding,
   title = {Metaheuristic planner for cooperative multi-agent wall construction with UAVs},
+  author = {Basel Elkhapery and Robert Pěnička and Michal Němec and Mohsin Siddiqui},
   journal = {Automation in Construction},
   volume = {152},
   pages = {104908},
