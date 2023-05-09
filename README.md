@@ -7,14 +7,17 @@
 If you use this code in an academic context, please cite the following publication:
 
 B. Elkhapery, R. Pěnička, M. Němec, M. Siddiqu, **Metaheuristic planner for cooperative multi-agent wall construc-
-tion with UAVs**, Automation in Construction, 2023. ([PDF](http://mrs.felk.cvut.cz/data/papers/AIC23_Elkhapery.pdf))
+tion with UAVs**, Automation in Construction, Volume 152, 104908, 2023, <https://doi.org/10.1016/j.autcon.2023.104908>. ([PDF](http://mrs.felk.cvut.cz/data/papers/AIC23_Elkhapery.pdf))
 
 ```
 @article{Elkhapery23_AIC_UAVWallBuilding,
-  author={Elkhapery, Basel and Pěnička, Robert and Němec, Michal and Siddiqui, Mohsin},
+  title = {Metaheuristic planner for cooperative multi-agent wall construction with UAVs},
   journal = {Automation in Construction},
-  title={Metaheuristic planner for cooperative multi-agent wall construction with UAVs}, 
-  year={2023}
+  volume = {152},
+  pages = {104908},
+  year = {2023},
+  issn = {0926-5805},
+  doi = {https://doi.org/10.1016/j.autcon.2023.104908},
 }
 ```
 
